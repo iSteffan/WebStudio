@@ -1,0 +1,40 @@
+@import "../utils/mixin";
+
+.section-client__list {
+    display: flex;
+    gap: 30px;
+
+    list-style: none;
+}
+
+.section-client__item {
+    width: calc((100% - 150px) / 6);
+}
+
+.section-client__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+
+    @include transition(border);
+
+    &:hover,
+    &:focus {
+        border: 1px solid $accentColor;
+    }
+}
+
+.section-client__icon {
+    fill: #afb1b8;
+
+    @include transition(fill);
+
+    .section-client__link:hover &,
+    .section-client__link:focus & {
+        fill: $accentColor;
+    }
+}
