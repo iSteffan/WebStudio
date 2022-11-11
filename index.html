@@ -59,6 +59,15 @@
             >
           </li>
         </ul>
+        <button
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="button-mobile js-open-menu"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use href="./img/icons.svg#menu-open" class="button-mobile__open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -443,6 +452,15 @@
       </div>
     </footer>
 
+    <!-- Мобільне меню -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="button-mobile js-close-menu">
+        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+          <use href="./img/icons.svg#menu-close" class="button-mobile__close"></use>
+        </svg>
+      </button>
+    </div>
+
     <!--Модальне вікно  -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
@@ -514,6 +532,7 @@
     </div>
 
     <!-- Java Script -->
+    <script defer src="js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

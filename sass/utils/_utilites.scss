@@ -1,43 +1,43 @@
 body {
-    font-family: $mainFont, sans-serif;
-    color: $textColorMain;
-    background-color: $backgroundColorMain;
+  font-family: $mainFont, sans-serif;
+  color: $textColorMain;
+  background-color: $backgroundColorMain;
 }
 
 .current {
-    color: $accentColor;
+  color: $accentColor;
 
-    &::after {
-            content: '';
-            position: absolute;
-            bottom: -1px;
-            left: 0;
-    
-            width: 100%;
-            height: 4px;
-            background-color: $accentColor;
-            border-radius: 2px;
-        }
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+
+    width: 100%;
+    height: 4px;
+    background-color: $accentColor;
+    border-radius: 2px;
+  }
 }
 
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 320px;
 
-        @media screen and (min-width: 480px) {
-                width: 450px;
-            }
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
 
-        @media screen and (min-width: 768px) {
-            width: 738px;
-        }
+  @media screen and (min-width: 768px) {
+    width: 738px;
+  }
 
-        @media screen and (min-width: 1200px) {
-            width: 1200px;
-        }
-
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 
 // .section {
@@ -47,15 +47,15 @@ body {
 
 /* ----------------------------------------Прихований контент---------------------------------------- */
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
