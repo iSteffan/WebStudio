@@ -59,9 +59,9 @@
 }
 
 .navigation-list__item {
-  @media screen and (min-width: 1200px) {
-    position: relative;
+  position: relative;
 
+  @media screen and (min-width: 1200px) {
     &:not(:last-child) {
       margin-right: 50px;
     }
