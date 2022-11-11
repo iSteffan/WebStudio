@@ -1,20 +1,29 @@
-@import "../utils/mixin";
+@import '../utils/mixin';
 
 .page-header {
-    border-bottom: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 
-    .container {
-            display: flex;
-            align-items: center;
-        }
+  @media screen and (max-width: 767px) {
+    padding: 16px 0;
+  }
+}
+
+@media screen and (min-width: 468px) {
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .navigation {
+  @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
+  }
 }
 
 .navigation-list__link {
+  @media screen and (min-width: 768px) {
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -22,62 +31,72 @@
     color: $textColorMain;
     text-decoration: none;
 
-
     @include transition(color);
 
     &:hover,
     &:focus {
-        color: $accentColor;
+      color: $accentColor;
     }
-}
-
-.contacts-list__link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: $textColorSecondary;
-    text-decoration: none;
-
-    @include transition(color);
-
-    &:hover,
-    &:focus {
-    color: $accentColor;
-    }
+  }
 }
 
 .navigation-list {
-    display: flex;
-    list-style: none;
-}
+  display: flex;
+  list-style: none;
+  gap: 50px;
 
-.contacts-list {
-    display: flex;
-    list-style: none;
-    margin-left: auto;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .navigation-list__link {
+  @media screen and (min-width: 768px) {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+  }
 }
 
 .navigation-list__item {
+  @media screen and (min-width: 1200px) {
     position: relative;
 
     &:not(:last-child) {
-            margin-right: 50px;
-        }
+      margin-right: 50px;
+    }
+  }
+}
+
+.contacts-list {
+  list-style: none;
+  margin-left: auto;
+  display: flex;
+  flex-direction: row;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+  }
 }
 
 .contacts-list__item {
+  @media screen and (min-width: 768px) {
+  }
+
+  @media screen and (min-width: 1200px) {
     & + & {
-    margin-left: 30px;
+      margin-left: 30px;
     }
+  }
 }
 
 // Ідентично
@@ -85,34 +104,81 @@
 //     margin-left: 30px;
 // }
 
+.contacts-list__link {
+  display: flex;
+  align-items: center;
+
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: $textColorSecondary;
+  text-decoration: none;
+
+  @include transition(color);
+
+  &:hover,
+  &:focus {
+    color: $accentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 12px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+
 /* ---------------------------Хедер іконки--------------------------- */
 
 .contacts-list__envelope {
+  fill: #757575;
+
+  @include transition(fill);
+
+  .contacts-list__link:focus &,
+  .contacts-list__link:hover & {
+    fill: $accentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+
+    width: 14px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 10px;
 
     width: 16px;
     height: 16px;
-    fill: #757575;
-
-    @include transition(fill);
-
-    .contacts-list__link:focus &,
-    .contacts-list__link:hover & {
-        fill: $accentColor;
-    }
+  }
 }
 
 .contacts-list__smartphone {
+  fill: #757575;
+
+  @include transition(fill);
+
+  .contacts-list__link:focus &,
+  .contacts-list__link:hover & {
+    fill: $accentColor;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+
+    width: 10px;
+    height: 14px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-right: 10px;
 
     width: 10px;
     height: 16px;
-    fill: #757575;
-
-    @include transition(fill);
-
-    .contacts-list__link:focus &,
-    .contacts-list__link:hover & {
-        fill: $accentColor;
-        }
+  }
 }
