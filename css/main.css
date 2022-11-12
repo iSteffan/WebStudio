@@ -23,6 +23,63 @@ img {
 
 /* ----------------------------------------Колір---------------------------------------- */
 /* ----------------------------------------Шрифт---------------------------------------- */
+body {
+  font-family: "Roboto", sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+}
+
+.current {
+  color: #2196f3;
+}
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 738px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
+
+/* ----------------------------------------Прихований контент---------------------------------------- */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .logo {
   font-family: "Raleway";
   font-weight: 700;
@@ -242,17 +299,6 @@ img {
   }
 }
 
-.button-mobile.is-open .button-mobile__open {
-  display: none;
-}
-
-.button-mobile__close {
-  display: none;
-}
-.button-mobile.is-open .button-mobile__close {
-  display: block;
-}
-
 .section-main__button {
   padding: 10px 32px;
   font-family: inherit;
@@ -324,6 +370,7 @@ img {
   background-color: inherit;
   border: none;
   margin-left: auto;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .button-mobile {
@@ -331,60 +378,19 @@ img {
   }
 }
 
-body {
-  font-family: "Roboto", sans-serif;
-  color: #212121;
-  background-color: #ffffff;
-}
-
-.current {
-  color: #2196f3;
-}
-.current::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
+.menu-container {
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100%;
-  height: 4px;
-  background-color: #2196f3;
-  border-radius: 2px;
+  width: 100vw;
+  height: 100vh;
+  padding: 48px 40px;
+  background-color: #ffffff;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
 }
 
-.container {
-  margin-right: auto;
-  margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-  min-width: 320px;
-}
-@media screen and (min-width: 480px) {
-  .container {
-    width: 450px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 738px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
-}
-
-/* ----------------------------------------Прихований контент---------------------------------------- */
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.menu-container.is-open {
+  transform: translateX(0);
 }/*# sourceMappingURL=main.css.map */

@@ -182,17 +182,3 @@
     height: 16px;
   }
 }
-
-.button-mobile__open {
-  .button-mobile.is-open & {
-    display: none;
-  }
-}
-
-.button-mobile__close {
-  display: none;
-
-  .button-mobile.is-open & {
-    display: block;
-  }
-}
