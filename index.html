@@ -453,18 +453,35 @@
     </footer>
 
     <!-- Мобільне меню -->
+
     <div class="menu-container js-menu-container container" id="mobile-menu">
-      <button class="button-mobile js-close-menu">
-        <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-          <use href="./img/icons.svg#menu-close" class="c"></use>
-        </svg>
-      </button>
-      <ul class="mobile-menu">
-        <li><a href="" class="link">About</a></li>
-        <li><a href="" class="link">Products</a></li>
-        <li><a href="" class="link">Contacts</a></li>
-        <li><a href="" class="link">Career</a></li>
-      </ul>
+      <div class="container">
+        <button class="button-mobile js-close-menu">
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use href="./img/icons.svg#menu-close" class="c"></use>
+          </svg>
+        </button>
+        <ul class="">
+          <li class="navigation-list__item">
+            <a href="./index.html" class="navigation-list__link current">Студія</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="./portfolio.html" class="navigation-list__link">Портфоліо</a>
+          </li>
+          <li class="navigation-list__item">
+            <a href="" class="navigation-list__link">Контакти</a>
+          </li>
+        </ul>
+
+        <ul class="">
+          <li class="contacts-list__item">
+            <a href="mailto:info@devstudio.com" class="contacts-list__link"> info@devstudio.com</a>
+          </li>
+          <li class="contacts-list__item">
+            <a href="tel:+380961111111" class="contacts-list__link"> +38 096 111 11 11</a>
+          </li>
+        </ul>
+      </div>
     </div>
 
     <!--Модальне вікно  -->

@@ -48,15 +48,16 @@ body {
   margin-left: auto;
   padding-left: 15px;
   padding-right: 15px;
+  min-width: 320px;
 }
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
   }
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 738px;
+    width: 768px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -132,12 +133,12 @@ body {
 }
 @media screen and (max-width: 767px) {
   .page-header {
-    padding: 16px 0;
+    padding: 6px 0;
   }
 }
 
 @media screen and (min-width: 468px) {
-  .container {
+  .page-header .container {
     display: flex;
     align-items: center;
   }
@@ -372,6 +373,12 @@ body {
   margin-left: auto;
   cursor: pointer;
 }
+.menu-container .button-mobile {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #fff;
+}
 @media screen and (min-width: 768px) {
   .button-mobile {
     display: none;
@@ -384,7 +391,6 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
   transform: translateX(100%);
@@ -393,4 +399,9 @@ body {
 
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+.menu-container .container {
+  position: relative;
+  padding: 48px 40px;
 }/*# sourceMappingURL=main.css.map */

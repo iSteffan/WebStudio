@@ -4,7 +4,6 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 40px;
   background-color: #ffffff;
   z-index: 999;
 
@@ -14,4 +13,9 @@
 
 .menu-container.is-open {
   transform: translateX(0);
+}
+
+.menu-container .container {
+  position: relative;
+  padding: 48px 40px;
 }
