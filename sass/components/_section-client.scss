@@ -1,40 +1,50 @@
-@import "../utils/mixin";
+@import '../utils/mixin';
 
 .section-client__list {
-    display: flex;
-    gap: 30px;
+  display: flex;
+  gap: 30px;
 
-    list-style: none;
+  list-style: none;
+}
+
+.section-client__title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .section-client__item {
-    width: calc((100% - 150px) / 6);
+  width: calc((100% - 150px) / 6);
 }
 
 .section-client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 92px;
-    border: 1px solid #afb1b8;
-    border-radius: 4px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 
-    @include transition(border);
+  @include transition(border);
 
-    &:hover,
-    &:focus {
-        border: 1px solid $accentColor;
-    }
+  &:hover,
+  &:focus {
+    border: 1px solid $accentColor;
+  }
 }
 
 .section-client__icon {
-    fill: #afb1b8;
+  fill: #afb1b8;
 
-    @include transition(fill);
+  @include transition(fill);
 
-    .section-client__link:hover &,
-    .section-client__link:focus & {
-        fill: $accentColor;
-    }
+  .section-client__link:hover &,
+  .section-client__link:focus & {
+    fill: $accentColor;
+  }
 }
