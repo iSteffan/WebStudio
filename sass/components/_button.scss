@@ -1,7 +1,7 @@
 @import '../utils/mixin';
 
 .section-main__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
 
   font-family: inherit;
   font-weight: 700;
@@ -14,6 +14,10 @@
   border-radius: 4px;
   cursor: pointer;
   border-color: transparent;
+
+  @media screen and (min-width: 1200px) {
+    padding: 10px 32px;
+  }
 
   @include transition(background);
 

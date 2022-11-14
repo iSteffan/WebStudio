@@ -301,7 +301,7 @@ body {
 }
 
 .section-main__button {
-  padding: 10px 32px;
+  padding: 10px 24px;
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -316,6 +316,11 @@ body {
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .section-main__button {
+    padding: 10px 32px;
+  }
 }
 .section-main__button:hover, .section-main__button:focus {
   background: #188ce8;
@@ -382,6 +387,45 @@ body {
 @media screen and (min-width: 768px) {
   .button-mobile {
     display: none;
+  }
+}
+
+.section-main.section {
+  margin: 0 auto;
+  padding-bottom: 118px;
+  padding-top: 118px;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-main.section {
+    padding-bottom: 200px;
+    padding-top: 200px;
+    max-width: 1600px;
+    height: 600px;
+    background-color: #2f303a;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/background-image-hero.jpg);
+    background-size: cover;
+  }
+}
+
+.section-main__title {
+  margin-bottom: 30px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 360px;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: black;
+}
+@media screen and (min-width: 1200px) {
+  .section-main__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
   }
 }
 
