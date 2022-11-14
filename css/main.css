@@ -513,7 +513,7 @@ body {
   height: 70px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .section-samples {
     display: none;
   }
@@ -530,11 +530,6 @@ body {
 
 .section-samples.section {
   padding-top: 0;
-}
-@media screen and (man-width: 767px) {
-  .section-samples.section {
-    display: none;
-  }
 }
 
 .section-samples__list {
