@@ -571,6 +571,12 @@ body {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 1199px) {
+  .section-team.section {
+    padding-top: 60px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .section-team__list {
     display: flex;
