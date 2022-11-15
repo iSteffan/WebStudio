@@ -31,14 +31,14 @@
 }
 
 .page-footer__logo {
-  @media screen and (min-width: 1200px) {
-    display: block;
-    color: #ffffff;
+  display: block;
+  color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
   }
 }
 
 .page-footer__logo--bottom {
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 20px;
-  }
+  margin-bottom: 20px;
 }
