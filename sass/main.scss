@@ -1,5 +1,4 @@
 @import 'utils/reset';
-
 @import 'utils/variables';
 @import 'utils/utilites';
 @import 'components/logo';
@@ -13,12 +12,4 @@
 @import 'components/page-footer';
 @import 'components/modal-window';
 @import 'components/mobile-menu';
-
-@media screen and (min-width: 480px) {
-}
-
-@media screen and (min-width: 768px) {
-}
-
-@media screen and (min-width: 1200px) {
-}
+// @import 'components/portfolio';
