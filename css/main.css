@@ -398,6 +398,9 @@ body {
   background-color: inherit;
   border: none;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .menu-container .button-mobile {
   position: absolute;
@@ -409,6 +412,9 @@ body {
   .button-mobile {
     display: none;
   }
+}
+.button-mobile:hover, .button-mobile:focus {
+  fill: #2196f3;
 }
 
 .section-main.section {
