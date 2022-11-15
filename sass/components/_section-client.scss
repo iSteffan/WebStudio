@@ -1,24 +1,50 @@
 @import '../utils/mixin';
 
+.section-client.section {
+  @media screen and (max-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 .section-client__list {
   display: flex;
+  flex-wrap: wrap;
   gap: 30px;
 
   list-style: none;
 }
 
 .section-client__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+
   text-align: center;
   letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .section-client__item {
-  width: calc((100% - 150px) / 6);
+  @media screen and (max-width: 767px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
 .section-client__link {
