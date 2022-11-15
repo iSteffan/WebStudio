@@ -43,6 +43,10 @@ body {
   border-radius: 2px;
 }
 
+.navigation-list__link.current {
+  color: #2196f3;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;

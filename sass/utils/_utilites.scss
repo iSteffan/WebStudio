@@ -20,6 +20,10 @@ body {
   }
 }
 
+.navigation-list__link.current {
+  color: $accentColor;
+}
+
 .container {
   margin-right: auto;
   margin-left: auto;
