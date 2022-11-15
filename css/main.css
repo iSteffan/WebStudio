@@ -146,6 +146,7 @@ body {
   .page-header .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 768px) {
@@ -380,7 +381,6 @@ body {
 .button-mobile {
   background-color: inherit;
   border: none;
-  margin-left: auto;
   cursor: pointer;
 }
 .menu-container .button-mobile {
