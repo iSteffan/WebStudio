@@ -24,14 +24,6 @@
   }
 }
 
-.section-filter__item {
-  @media screen and (min-width: 1200px) {
-    &:not(:last-child) {
-      margin-right: 8px;
-    }
-  }
-}
-
 .project-list {
   @media screen and (min-width: 1200px) {
     display: flex;
