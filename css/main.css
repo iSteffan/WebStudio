@@ -17,7 +17,7 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -677,9 +677,6 @@ body {
 @media screen and (min-width: 1200px) {
   .section-team__item {
     width: calc((100% - 90px) / 4);
-  }
-  .section-team__item:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -1401,16 +1398,21 @@ body {
     row-gap: 15px;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .section-filter__list {
     justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-filter__list {
     margin-bottom: 50px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .project-list {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
   }
 }
@@ -1423,15 +1425,19 @@ body {
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (max-width: 767px) {
+  .project-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .project-list__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
 @media screen and (min-width: 1200px) {
   .project-list__item {
     width: calc((100% - 60px) / 3);
-  }
-  .project-list__item:not(:nth-child(3n)) {
-    margin-right: 30px;
-  }
-  .project-list__item:not(:nth-last-child(-n+3)) {
-    margin-bottom: 30px;
   }
 }
 .project-list__item:hover, .project-list__item:focus {
@@ -1442,10 +1448,8 @@ body {
   text-decoration: none;
 }
 
-@media screen and (min-width: 1200px) {
-  .project-list--padding {
-    padding: 20px 24px;
-  }
+.project-list--padding {
+  padding: 20px 24px;
 }
 
 .project-list__title {
@@ -1488,19 +1492,27 @@ body {
 }
 
 .overlay__text {
+  width: 402px;
+  height: 140px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: #ffffff;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: #ffffff;
+}
+@media screen and (min-width: 768px) {
+  .overlay__text {
+    width: 306px;
+    height: 168px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .overlay__text {
     width: 322px;
     height: 168px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
   }
 }/*# sourceMappingURL=main.css.map */

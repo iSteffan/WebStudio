@@ -18,29 +18,36 @@
     row-gap: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     justify-content: center;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
 
 .project-list {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     display: flex;
+    gap: 30px;
     flex-wrap: wrap;
   }
 }
 
 .project-list__item {
-  @media screen and (min-width: 1200px) {
-    width: calc((100% - 60px) / 3);
-    &:not(:nth-child(3n)) {
-      margin-right: 30px;
-    }
-
-    &:not(:nth-last-child(-n + 3)) {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
       margin-bottom: 30px;
     }
+  }
+
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: calc((100% - 60px) / 3);
   }
 
   position: relative;
@@ -62,9 +69,7 @@
 }
 
 .project-list--padding {
-  @media screen and (min-width: 1200px) {
-    padding: 20px 24px;
-  }
+  padding: 20px 24px;
 }
 
 .project-list__title {
@@ -110,19 +115,29 @@
 }
 
 .overlay__text {
+  width: 402px;
+  height: 140px;
+
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
+
+  @media screen and (min-width: 768px) {
+    width: 306px;
+    height: 168px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 322px;
     height: 168px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
   }
 
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
-  color: #ffffff;
 }

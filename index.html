@@ -140,15 +140,33 @@
           <h2 class="section-samples__title">Чим ми займаємося</h2>
           <ul class="section-samples__list">
             <li class="section-samples__item">
-              <img src="./img/what-we-do1.jpg" alt="Програмування" width="370" height="294" />
+              <img
+                srcset="./img/what-we-do1.jpg 1x, ./img/what-we-do1@2x.jpg 2x"
+                src="./img/what-we-do1.jpg"
+                alt="Програмування"
+                width="370"
+                height="294"
+              />
               <h3 class="section-samples__description">Десктопні додатки</h3>
             </li>
             <li class="section-samples__item">
-              <img src="./img/what-we-do2.jpg" alt="Мобільний додаток" width="370" height="294" />
+              <img
+                srcset="./img/what-we-do2.jpg 1x, ./img/what-we-do2@2x.jpg 2x"
+                src="./img/what-we-do2.jpg"
+                alt="Мобільний додаток"
+                width="370"
+                height="294"
+              />
               <h3 class="section-samples__description">Мобільні додатки</h3>
             </li>
             <li class="section-samples__item">
-              <img src="./img/what-we-do3.jpg" alt="Веб Дизайн" width="370" height="294" />
+              <img
+                srcset="./img/what-we-do3.jpg 1x, ./img/what-we-do3@2x.jpg 2x"
+                src="./img/what-we-do3.jpg"
+                alt="Веб Дизайн"
+                width="370"
+                height="294"
+              />
               <h3 class="section-samples__description">Дизайнерські рішення</h3>
             </li>
           </ul>
@@ -161,11 +179,21 @@
           <h2 class="section-team__title">Наша команда</h2>
           <ul class="section-team__list">
             <li class="section-team__item">
-              <img
-                srcset="./img/igor.jpg 1x, ./img/igor@2x.jpg 2x"
-                src="./img/igor.jpg"
-                alt="Чоловік"
-              />
+              <picture>
+                <source
+                  srcset="./img/mobile-igor.jpg 1x, ./img/mobile-igor@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/igor.jpg 1x, ./img/igor@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-igor.jpg 1x, ./img/tablet-igor@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./img/igor.jpg" alt="Чоловік" />
+              </picture>
               <div class="section-team__item--padding">
                 <h3 class="section-team__member">Ігор Дем'яненко</h3>
                 <p lang="en" class="section-team__position">Product Designer</p>
@@ -202,11 +230,21 @@
               </ul>
             </li>
             <li class="section-team__item">
-              <img
-                srcset="./img/olga.jpg 1x, ./img/olga@2x.jpg 2x"
-                src="./img/olga.jpg"
-                alt="Жінка"
-              />
+              <picture>
+                <source
+                  srcset="./img/mobile-olga.jpg 1x, ./img/mobile-olga@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/olga.jpg 1x, ./img/olga@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-olga.jpg 1x, ./img/tablet-olga@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./img/olga.jpg" alt="Жінка" />
+              </picture>
               <div class="section-team__item--padding">
                 <h3 class="section-team__member">Ольга Рєпіна</h3>
                 <p lang="en" class="section-team__position">Frontend Developer</p>
@@ -243,11 +281,21 @@
               </ul>
             </li>
             <li class="section-team__item">
-              <img
-                srcset="./img/mykola.jpg 1x, ./img/mykola@2x.jpg 2x"
-                src="./img/mykola.jpg"
-                alt="Чоловік"
-              />
+              <picture>
+                <source
+                  srcset="./img/mobile-mykola.jpg 1x, ./img/mobile-mykola@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/mykola.jpg 1x, ./img/mykola@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-mykola.jpg 1x, ./img/tablet-mykola@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./img/mykola.jpg" alt="Чоловік" />
+              </picture>
               <div class="section-team__item--padding">
                 <h3 class="section-team__member">Микола Тарасов</h3>
                 <p lang="en" class="section-team__position">Marketing</p>
@@ -284,11 +332,21 @@
               </ul>
             </li>
             <li class="section-team__item">
-              <img
-                srcset="./img/mikhaylo.jpg 1x, ./img/mikhaylo@2x.jpg 2x"
-                src="./img/mikhaylo.jpg"
-                alt="Чоловік"
-              />
+              <picture>
+                <source
+                  srcset="./img/mobile-mikhaylo.jpg 1x, ./img/mobile-mikhaylo@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./img/mikhaylo.jpg 1x, ./img/mikhaylo@2x.jpg 2x"
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="./img/tablet-mikhaylo.jpg 1x, ./img/tablet-mikhaylo@2x.jpg 2x"
+                  media="(min-width: 768px)"
+                />
+                <img src="./img/mikhaylo.jpg" alt="Чоловік" />
+              </picture>
               <div class="section-team__item--padding">
                 <h3 class="section-team__member">Михайло Єрмаков</h3>
                 <p lang="en" class="section-team__position">UI Designer</p>
